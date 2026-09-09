@@ -1,31 +1,180 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Dr. Yasmin Mohamed El Sersy</title>
 <style>
-body{margin:0;background:#f7f7f7;font-family:Arial,sans-serif;color:#222}
-.wrap{max-width:520px;margin:0 auto;padding:32px 20px}
-.card{background:white;border-radius:24px;padding:28px 20px;box-shadow:0 8px 30px rgba(0,0,0,.08);text-align:center}
-h1{font-size:24px;margin:8px 0}
-p{color:#666;margin:6px 0 24px}
-a{display:block;text-decoration:none;color:#fff;background:#222;margin:12px 0;padding:15px;border-radius:14px;font-size:17px}
+*{box-sizing:border-box}
+:root{
+  --bg:#aeb5bd;
+  --card:#d9dfe4;
+  --blue:#4d78a0;
+  --blue2:#628caf;
+  --text:#15273a;
+  --muted:#596575;
+}
+body{
+  margin:0;
+  min-height:100vh;
+  background:linear-gradient(135deg,#aeb5bd,#c4cbd2);
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--text);
+}
+.page{
+  width:100%;
+  max-width:520px;
+  min-height:100vh;
+  margin:auto;
+  padding:30px 18px 34px;
+}
+.card{
+  position:relative;
+  padding:0 26px 34px;
+  border-radius:32px;
+  background:rgba(225,230,234,.88);
+  box-shadow:0 18px 42px rgba(30,45,60,.20);
+}
+.profile{
+  text-align:center;
+  padding-top:0;
+}
+.photo-ring{
+  width:152px;
+  height:152px;
+  margin:-1px auto 18px;
+  padding:7px;
+  border-radius:50%;
+  background:#edf1f3;
+  border:5px solid #79a1c2;
+  box-shadow:0 5px 15px rgba(50,75,95,.18);
+  position:relative;
+}
+.photo{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:center 22%;
+  border-radius:50%;
+}
+h1{
+  margin:0;
+  font-size:25px;
+  line-height:1.25;
+  font-weight:700;
+  letter-spacing:-.4px;
+}
+.subtitle{
+  margin:8px 0 22px;
+  color:var(--muted);
+  font-size:18px;
+}
+.divider{
+  height:3px;
+  width:92%;
+  margin:0 auto 16px;
+  background:#78a0c1;
+  border-radius:3px;
+}
+.links{
+  display:flex;
+  flex-direction:column;
+  gap:11px;
+}
+.links a{
+  min-height:62px;
+  display:flex;
+  align-items:center;
+  gap:17px;
+  padding:9px 18px;
+  border-radius:32px;
+  background:linear-gradient(180deg,var(--blue2),var(--blue));
+  color:white;
+  text-decoration:none;
+  font-size:17px;
+  font-weight:600;
+  box-shadow:0 3px 7px rgba(45,70,95,.16);
+}
+.icon{
+  width:42px;
+  flex:0 0 42px;
+  text-align:center;
+  font-size:27px;
+  line-height:1;
+  font-weight:700;
+}
+.label{flex:1;text-align:left}
+.arrow{font-size:29px;font-weight:300;line-height:1}
+.footer{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:15px;
+  margin-top:25px;
+}
+.line{
+  height:3px;
+  width:55px;
+  background:#547da2;
+  border-radius:3px;
+}
+.social{
+  width:51px;
+  height:51px;
+  border-radius:50%;
+  background:var(--blue);
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:24px;
+  font-weight:700;
+}
+@media(max-width:420px){
+  .page{padding:24px 12px 28px}
+  .card{padding:0 18px 28px;border-radius:28px}
+  .photo-ring{width:140px;height:140px}
+  h1{font-size:22px}
+  .subtitle{font-size:16px}
+  .links a{min-height:56px;font-size:16px}
+}
 </style>
 </head>
 <body>
-<div class="wrap"><div class="card">
-<h1>Dr. Yasmin Mohamed El Sersy</h1>
-<p>Nutrition and Skin Care</p>
-<a href="https://www.facebook.com/share/14ixNLxa2xH/">Facebook</a>
-<a href="https://www.instagram.com/dr.yasminemohammed?igsh=MWl5czdmNDlmdnAzaw%3D%3D">Instagram</a>
-<a href="https://www.tiktok.com/@dryasmineelsersy?_r=1&_t=ZS-8xYW8CgJUP4">TikTok</a>
-<a href="https://chat.whatsapp.com/KtHasi6nKkvFYoFD2GJw88?ilr=4&mlu=4&p=a&s=cl">Group WhatsApp</a>
-<a href="https://wa.me/message/PN7VGEDPS2BQP1">Whatsapp</a>
-<a href="https://ipn.eg/S/yasminelsersy/instapay/7GDbwv">Instapay</a>
-<a href="https://maps.app.goo.gl/7Y8DYVYq6CKLvHTz5">Location Tagamo</a>
-<a href="https://maps.app.goo.gl/ZYFF6TeRPXyiDqiG9">Location CMC</a>
-<a href="https://maps.app.goo.gl/4iZjVHBLSH1Gd7PPA">Location Katameya</a>
-</div></div>
+<main class="page">
+<section class="card">
+  <div class="profile">
+    <div class="photo-ring">
+      <img class="photo" src="dr_yasmin_photo.jpeg" alt="Dr. Yasmin Mohamed El Sersy">
+    </div>
+    <h1>Dr. Yasmin Mohamed El Sersy</h1>
+    <div class="subtitle">Nutrition and Skin Care</div>
+    <div class="divider"></div>
+  </div>
+
+  <nav class="links">
+    <a href="https://www.facebook.com/share/14ixNLxa2xH/" target="_blank" rel="noopener"><span class="icon">f</span><span class="label">Facebook</span><span class="arrow">›</span></a>
+    <a href="https://www.instagram.com/dr.yasminemohammed?igsh=MWl5czdmNDlmdnAzaw%3D%3D" target="_blank" rel="noopener"><span class="icon">◎</span><span class="label">Instagram</span><span class="arrow">›</span></a>
+    <a href="https://www.tiktok.com/@dryasmineelsersy?_r=1&_t=ZS-8xYW8CgJUP4" target="_blank" rel="noopener"><span class="icon">♪</span><span class="label">TikTok</span><span class="arrow">›</span></a>
+    <a href="https://chat.whatsapp.com/KtHasi6nKkvFYoFD2GJw88?ilr=4&mlu=4&p=a&s=cl" target="_blank" rel="noopener"><span class="icon">♟</span><span class="label">Group WhatsApp</span><span class="arrow">›</span></a>
+    <a href="https://wa.me/message/PN7VGEDPS2BQP1" target="_blank" rel="noopener"><span class="icon">◔</span><span class="label">Whatsapp</span><span class="arrow">›</span></a>
+    <a href="https://ipn.eg/S/yasminelsersy/instapay/7GDbwv" target="_blank" rel="noopener"><span class="icon" style="font-size:13px">INSTA<br>PAY</span><span class="label">Instapay</span><span class="arrow">›</span></a>
+    <a href="https://maps.app.goo.gl/7Y8DYVYq6CKLvHTz5" target="_blank" rel="noopener"><span class="icon">●</span><span class="label">Location Tagamo</span><span class="arrow">›</span></a>
+    <a href="https://maps.app.goo.gl/ZYFF6TeRPXyiDqiG9" target="_blank" rel="noopener"><span class="icon">●</span><span class="label">Location CMC</span><span class="arrow">›</span></a>
+    <a href="https://maps.app.goo.gl/4iZjVHBLSH1Gd7PPA" target="_blank" rel="noopener"><span class="icon">●</span><span class="label">Location Katameya</span><span class="arrow">›</span></a>
+  </nav>
+
+  <div class="footer">
+    <span class="line"></span>
+    <a class="social" href="https://www.facebook.com/share/14ixNLxa2xH/" target="_blank" rel="noopener">f</a>
+    <a class="social" href="https://www.instagram.com/dr.yasminemohammed?igsh=MWl5czdmNDlmdnAzaw%3D%3D" target="_blank" rel="noopener">◎</a>
+    <a class="social" href="https://www.tiktok.com/@dryasmineelsersy?_r=1&_t=ZS-8xYW8CgJUP4" target="_blank" rel="noopener">♪</a>
+    <a class="social" href="https://wa.me/message/PN7VGEDPS2BQP1" target="_blank" rel="noopener">◔</a>
+    <a class="social" href="https://ipn.eg/S/yasminelsersy/instapay/7GDbwv" target="_blank" rel="noopener" style="font-size:9px">INSTA<br>PAY</a>
+    <span class="line"></span>
+  </div>
+</section>
+</main>
 </body>
 </html>
